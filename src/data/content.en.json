@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "Anika Turns 2",
+    "subtitle": "Welcome to our magical birthday celebration",
+    "cta": "RSVP"
+  },
+  "venue": {
+    "title": "Celebration Venue",
+    "name": "Crystal Palace Banquet Hall",
+    "address": "Hyderabad, Telangana",
+    "date": "October 12",
+    "time": "5:00 PM",
+    "cta": "Get Directions"
+  },
+  "journey": {
+    "title": "Anika's Journey",
+    "milestones": [
+      {
+        "title": "Born",
+        "date": "October 12, 2024",
+        "description": "Our little princess arrived into the world."
+      },
+      {
+        "title": "First Smile",
+        "date": "November 2024",
+        "description": "The day she melted our hearts with her smile."
+      },
+      {
+        "title": "First Steps",
+        "date": "September 2025",
+        "description": "Taking her very first magical steps."
+      },
+      {
+        "title": "Turning 2",
+        "date": "October 12, 2026",
+        "description": "Celebrating two years of pure joy."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Magical Moments"
+  },
+  "parents": {
+    "title": "Join the Celebration",
+    "invitation": "Rajesh & Priya invite you to celebrate our little princess Anika's 2nd birthday. We are waiting for your presence.",
+    "cta": "RSVP"
+  },
+  "nav": {
+    "home": "Home",
+    "venue": "Venue",
+    "journey": "Journey",
+    "gallery": "Gallery",
+    "parents": "Parents"
+  }
+}

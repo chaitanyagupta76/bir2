@@ -1,0 +1,19 @@
+{
+  "heroImage": "/images/frozen/hero.jpg",
+  "venueImage": "/images/frozen/venue.jpg",
+  "timeline": [
+    "/images/frozen/timeline-1.jpg",
+    "/images/frozen/timeline-2.jpg",
+    "/images/frozen/timeline-3.jpg",
+    "/images/frozen/timeline-4.jpg"
+  ],
+  "gallery": [
+    "/images/frozen/gallery-1.jpg",
+    "/images/frozen/gallery-2.jpg",
+    "/images/frozen/gallery-3.jpg",
+    "/images/frozen/gallery-4.jpg",
+    "/images/frozen/gallery-5.jpg",
+    "/images/frozen/gallery-6.jpg"
+  ],
+  "parentsImage": "/images/frozen/parents.jpg"
+}
