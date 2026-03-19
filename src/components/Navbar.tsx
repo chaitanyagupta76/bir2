@@ -33,6 +33,7 @@ export default function Navbar() {
         { label: content.nav.venue, href: '#venue' },
         { label: content.nav.journey, href: '#journey' },
         { label: content.nav.gallery, href: '#gallery' },
+        { label: content.nav.liveStream, href: '#liveStream' },
         { label: content.nav.parents, href: '#parents' },
     ];
 

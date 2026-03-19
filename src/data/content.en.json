@@ -40,6 +40,11 @@
   "gallery": {
     "title": "Magical Moments"
   },
+  "liveStream": {
+    "title": "Live Stream",
+    "description": "Join our magical celebration online",
+    "cta": "Watch Live"
+  },
   "parents": {
     "title": "Join the Celebration",
     "invitation": "Rajesh & Priya invite you to celebrate our little princess Anika's 2nd birthday. We are waiting for your presence.",
@@ -50,6 +55,7 @@
     "venue": "Venue",
     "journey": "Journey",
     "gallery": "Gallery",
+    "liveStream": "Live Stream",
     "parents": "Parents"
   }
 }

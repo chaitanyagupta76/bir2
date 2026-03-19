@@ -1,6 +1,7 @@
 {
   "heroImage": "/images/frozen/hero.jpg",
   "venueImage": "/images/frozen/venue.jpg",
+  "liveStreamUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "timeline": [
     "/images/frozen/timeline-1.jpg",
     "/images/frozen/timeline-2.jpg",

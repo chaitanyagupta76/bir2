@@ -7,6 +7,7 @@ import Hero from '@/components/Hero';
 import Venue from '@/components/Venue';
 import Journey from '@/components/Journey';
 import Gallery from '@/components/Gallery';
+import LiveStream from '@/components/LiveStream';
 import Parents from '@/components/Parents';
 
 export default function AppContent() {
@@ -31,6 +32,7 @@ export default function AppContent() {
                     <Venue />
                     <Journey />
                     <Gallery />
+                    <LiveStream />
                     <Parents />
                 </main>
             </div>
