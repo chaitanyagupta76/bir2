@@ -1,23 +1,40 @@
+"use client";
+
+import { Suspense, useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { LanguageProvider } from '@/context/LanguageProvider';
 import { getLanguage } from '@/lib/getLanguage';
 import { loadContent } from '@/lib/loadContent';
 import AppContent from '@/components/AppContent';
 
-export default async function Home({
-    searchParams,
-}: {
-    searchParams: { lang?: string | string[] } | Promise<{ lang?: string | string[] }>;
-}) {
-    // Await searchParams in Next 15 if it's a promise, though we can safely handle both
-    const resolvedSearchParams = await searchParams;
-    const langStr = resolvedSearchParams?.lang;
+function HomeContent() {
+    const searchParams = useSearchParams();
+    const langStr = searchParams.get('lang');
+    const lang = getLanguage(langStr as any);
+    
+    const [content, setContent] = useState<any>(null);
 
-    const lang = getLanguage(langStr);
-    const content = await loadContent(lang);
+    useEffect(() => {
+        let isMounted = true;
+        loadContent(lang).then((data) => {
+            if (isMounted) setContent(data);
+        });
+        return () => { isMounted = false; };
+    }, [lang]);
+
+    if (!content) return <div className="min-h-screen flex items-center justify-center bg-white">Loading...</div>;
 
     return (
         <LanguageProvider lang={lang} content={content}>
             <AppContent />
         </LanguageProvider>
+    );
+}
+
+export default function Home() {
+    return (
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-white">Loading...</div>}>
+            <HomeContent />
+        </Suspense>
     );
 }
